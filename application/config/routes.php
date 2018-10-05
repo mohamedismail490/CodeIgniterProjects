@@ -54,4 +54,6 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 
-$route['users'] = 'Users_controller';
+$route['users/index'] = 'Users_controller';
+
+$route['users/index/(:num)'] = 'Users_controller/index/$1';

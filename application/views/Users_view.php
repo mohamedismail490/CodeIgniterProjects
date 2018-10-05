@@ -9,12 +9,23 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+	<style type="text/css">
+
+		.users{
+
+			padding-top: 30px;
+			margin-bottom: 20px;
+
+		}
+
+	</style>
+
 </head>
 <body>
 
 <div class="container">
 
-	<h1 class="text-center">All Users</h1>
+	<h1 class="text-center users">All Users</h1>
 
 	<?php
 
@@ -67,7 +78,16 @@
 
 		}
 
+		if (isset($links)) {
+
+
+
+			echo $links ;
+		}
+
+
 	?>
+
 
 </div>
 
